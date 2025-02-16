@@ -45,6 +45,26 @@ iosnapr("file_path")
 ```
 
 ### Simulation:
+   Before using this package, you should first know the sector numbers and sector names included in it, which are:
+   Nomor_Sektor  Nama_Sektor
+   1             Pertanian, Kehutanan, dan Perikanan
+   2             Pertambangan dan Penggalian
+   3             Industri Pengolahan
+   4             Pengadaan Listrik dan Gas
+   5             Pengadaan Air, Pengelolaan Sampah, Limbah dan Daur Ulang
+   6             Konstruksi
+   7             Perdagangan Besar dan Eceran; Reparasi Mobil dan Sepeda Motor
+   8             Transportasi dan Pergudangan
+   9             Penyediaan Akomodasi dan Makan Minum
+   10            Informasi dan Komunikasi
+   11            Jasa Keuangan dan Asuransi
+   12            Real Estate
+   13            Jasa Perusahaan
+   14            Administrasi Pemerintahan, Pertahanan dan Jaminan Sosial Wajib
+   15            Jasa Pendidikan
+   16            Jasa Kesehatan dan Kegiatan Sosial
+   17            Jasa Lainnya
+   
    ```R
   iosnapr("C:\\Users\\Statistics Indonesia\\Downloads\\Tabel Input-Output Indonesia Transaksi Domestik Atas Dasar Harga Produsen (17 Lapangan Usaha), 2016 (Juta Rupiah).xlsx") # file_path is directory of file where Input Output Table saved
   New names:
