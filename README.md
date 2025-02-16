@@ -2,7 +2,7 @@
 ![CRAN Version](https://img.shields.io/badge/CRAN-7.3.2-brightgreen)
 ![Open Issues](https://img.shields.io/badge/open%20issues-0-brightgreen)
 ![License](https://img.shields.io/badge/License-MIT-blue)
-![License](https://img.shields.io/badge/Blog-jokoding.com-blue)
+![License](https://img.shields.io/badge/blog-jokoding.com-blue)
 
 ![WhatsApp_Image_2025-02-16_at_08 51 47-removebg-preview](https://github.com/user-attachments/assets/3f970ba9-c9b3-4495-82b3-00dd3fb3e8c6)
 
@@ -12,7 +12,27 @@
 `iosnapR` is an R package designed to analyze Indonesia's Input-Output Table. For instance, the I-O Table of East Java can be obtained from (https://jatim.bps.go.id/id/statistics-table/1/MjE0OCMx/tabel-input-output-provinsi-jawa-timur-transaksi-domestik-atas-dasar-harga-produsen-17-lapanganusaha-2016-ju) or the National I-O Table from (https://www.bps.go.id/id/statistics-table/1/MjI3MSMx/tabel-input-output-indonesia-transaksi-total-atas-dasar-harga-dasar--17-produk---2020--juta-rupiah-.html). This package is designed to calculate backward linkage, forward linkage, total linkage, total output, investment or consumption based on user input, employment predictions, and economic growth projections using the Input-Output Table.
 
 # features
-
+Before using this package, you should first know the sector numbers and sector names included in it, which are:
+```R
+Nomor_Sektor  Nama_Sektor
+   1 Pertanian, Kehutanan, dan Perikanan
+   2 Pertambangan dan Penggalian
+   3 Industri Pengolahan
+   4 Pengadaan Listrik dan Gas
+   5 Pengadaan Air, Pengelolaan Sampah, Limbah dan Daur Ulang
+   6 Konstruksi
+   7 Perdagangan Besar dan Eceran; Reparasi Mobil dan Sepeda Motor
+   8 Transportasi dan Pergudangan
+   9 Penyediaan Akomodasi dan Makan Minum
+   10 Informasi dan Komunikasi
+   11 Jasa Keuangan dan Asuransi
+   12 Real Estate
+   13 Jasa Perusahaan
+   14 Administrasi Pemerintahan, Pertahanan dan Jaminan Sosial Wajib
+   15 Jasa Pendidikan
+   16 Jasa Kesehatan dan Kegiatan Sosial
+   17 Jasa Lainnya
+```
 Run the `iosnapR` function in R to start the analysis.
 Select the downloaded file and copy-paste its directory.
 Input the estimated investment or consumption for each sector.
@@ -45,26 +65,6 @@ iosnapr("file_path")
 ```
 
 ### Simulation:
-   Before using this package, you should first know the sector numbers and sector names included in it, which are:
-   Nomor_Sektor  Nama_Sektor
-   1             Pertanian, Kehutanan, dan Perikanan
-   2             Pertambangan dan Penggalian
-   3             Industri Pengolahan
-   4             Pengadaan Listrik dan Gas
-   5             Pengadaan Air, Pengelolaan Sampah, Limbah dan Daur Ulang
-   6             Konstruksi
-   7             Perdagangan Besar dan Eceran; Reparasi Mobil dan Sepeda Motor
-   8             Transportasi dan Pergudangan
-   9             Penyediaan Akomodasi dan Makan Minum
-   10            Informasi dan Komunikasi
-   11            Jasa Keuangan dan Asuransi
-   12            Real Estate
-   13            Jasa Perusahaan
-   14            Administrasi Pemerintahan, Pertahanan dan Jaminan Sosial Wajib
-   15            Jasa Pendidikan
-   16            Jasa Kesehatan dan Kegiatan Sosial
-   17            Jasa Lainnya
-   
    ```R
   iosnapr("C:\\Users\\Statistics Indonesia\\Downloads\\Tabel Input-Output Indonesia Transaksi Domestik Atas Dasar Harga Produsen (17 Lapangan Usaha), 2016 (Juta Rupiah).xlsx") # file_path is directory of file where Input Output Table saved
   New names:
